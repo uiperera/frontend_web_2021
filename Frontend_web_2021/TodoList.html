@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>to do list</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+  <!-- links to footer -->
+  <link rel="stylesheet" href="myfooter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      padding-top: 40px;
+    }
+
+    body {
+      background-color: rgba(4, 174, 241, 0.082);
+    
+    }
+
+    img {
+      float: right;
+      opacity: 0.8;
+
+    }
+
+    #footer {
+
+      margin-top: 1092px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- the nav bar -->
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tourist Information
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a target="blank" href="sri_lanka.html">About Sri Lanka</a>
+        <a target="blank" href="places_travel.html">Places to travel</a>
+
+      </div>
+
+    </div>
+    <a target="blank" href="TodoList.html">To-Do-List</a>
+
+    <a target="blank" href="contact_us.html">Contact Us</a>
+  </div>
+
+
+  <!-- creating to do list -->
+  <img src="travel1copy-min (5).png">
+
+
+  <div id="app" class="container">
+    <h1 style="color:  rgba(4, 174, 241, 0.788);font-style: italic; font-size: 40px;"> Add Your List</h1>
+
+    <div>
+      <input type="text" v-model="todo">
+      <input type="submit" value="Add" @click="storeTodo" style="background-color: rgba(4, 174, 241, 0.788);">
+    </div>
+
+
+    <ol>
+      <li v-for="(todo, index) in todos">
+        {{ todo }}
+
+        <button @click="removeTodo(index)" style="background-color: rgb(4, 174, 241, 0.788);">Delete</button>
+      </li>
+    </ol>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  <script>
+    new Vue({
+      el: '#app',
+
+      data: {
+        todo: '',
+        todos: [],
+       
+      },
+
+      methods: {
+        storeTodo() {
+          this.todos.push(this.todo)
+          this.todo = ''
+        },
+
+        removeTodo(index) {
+          this.todos.splice(index, 1)
+        },
+
+
+
+      }
+    })
+  </script>
+
+
+
+
+  <!-- footer begin -->
+  <div id="footer">
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Sri Lankan Tours</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policies</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Our team</h4>
+              <ul>
+                <li><a href="#">directiors</a></li>
+                <li><a href="#">managers</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="emp.css"?>
+<website>
+  <pages>
+    <fpage>home</fpage>
+    <mod_date>2-12-2020</mod_date>
+    <spage>About us</spage>
+    <mod_date>6-12-2020</mod_date>
+    <tpage>
+      <firstpage>About Sri Lanka</firstpage>
+      <mod_date>10-12-2020</mod_date>
+      <secondpage>places to travel</secondpage>
+      <mod_date>15-12-2020</mod_date>
+    </tpage>
+    <fpage>to do list</fpage>
+    <mod_date>20-12-2020</mod_date>
+    <fpage>contact us</fpage>
+    <mod_date>27-12-2020</mod_date>
+  </pages>
+</website>

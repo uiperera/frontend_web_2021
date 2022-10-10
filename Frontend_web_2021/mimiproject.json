@@ -1,0 +1,26 @@
+{
+  "website": {
+    "pages": {
+      "fpage": [
+        "home",
+        "to do list",
+        "contact us"
+      ],
+      "mod_date": [
+        "2-12-2020",
+        "6-12-2020",
+        "20-12-2020",
+        "27-12-2020"
+      ],
+      "spage": "About us",
+      "tpage": {
+        "firstpage": "About Sri Lanka",
+        "mod_date": [
+          "10-12-2020",
+          "15-12-2020"
+        ],
+        "secondpage": "places to travel"
+      }
+    }
+  }
+}

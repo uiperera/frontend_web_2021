@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Contact_Us</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="footer.css">
+
+  <!-- links to footer -->
+  <link rel="stylesheet" href="myfooter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+
+    }
+
+    input[type=submit] {
+      background-color: rgba(4, 174, 241, 0.788);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #455da0;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: rgba(4, 174, 241, 0.055);
+      padding: 20px;
+    }
+
+
+    #footer {
+      margin-top: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- nav bar -->
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tourist Information
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a target="blank" href="sri_lanka.html">About Sri Lanka</a>
+        <a target="blank" href="places_travel.html">Places to travel</a>
+
+      </div>
+
+    </div>
+    <a target="blank" href="TodoList.html">To-Do-List</a>
+
+    <a target="blank" href="contact_us.html">Contact Us</a>
+  </div>
+
+  <!-- contact us -->
+
+  <h1 style="font-style: italic;text-align: center;">Contact are when you need.</h1>
+  <h2 style="font-style: italic;text-align: center;">We are very gratefull to help you.</h2>
+  <div class="container">
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" oninvalid="alert('You must fill out the First Name !');" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" oninvalid="alert('You must fill out the Last Name !');" placeholder="Your last name..">
+
+      <label for="lname">E-mail</label>
+      <input type="text" oninvalid="alert('You must fill out the E-mail !');" required placeholder="Your e-mail ..">
+
+      <label for="country">Country</label>
+      <input type="text" oninvalid="alert('You must fill out the Country !');" placeholder="Your country ..">
+
+      </select>
+      <div>
+        <label for="subject">Subject</label>
+        <textarea id="subject" oninvalid="alert('You must fill out the Subject !');" placeholder="Write.."
+          style="height:200px"></textarea>
+        <div oninvalid="alert('You must fill out the details !');">
+          <input type="submit" required value="Submit" onclick="myfunction()">
+        </div>
+      </div>
+    </form>
+
+    <!-- footer -->
+
+
+
+    <script>
+      function myfunction() {
+
+        alert("We will contact you soon based on the details you give.");
+      }
+
+    </script>
+
+    <!-- footer begin -->
+
+    <div id="footer">
+
+
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>Sri Lankan Tours</h4>
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policies</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">returns</a></li>
+                  <li><a href="#">payment options</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Our team</h4>
+                <ul>
+                  <li><a href="#">directiors</a></li>
+                  <li><a href="#">managers</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+</body>
+
+</html>

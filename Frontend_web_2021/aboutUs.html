@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <link rel="stylesheet" href="navbar.css">
+
+  <!-- links to footer -->
+  <link rel="stylesheet" href="myfooter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+
+
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(4, 174, 241, 0.788);
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: rgba(4, 174, 241, 0.788);
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: rgba(4, 174, 241, 0.788);
+      ;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #455da0;
+    }
+
+
+
+    #header2 {
+      word-spacing: 5px;
+      font-size: 30px;
+    }
+
+    #footer {
+      margin-top: 1000px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <div class="dropdown">
+      <button class="dropbtn">Tourist Information
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a target="blank" href="sri_lanka.html">About Sri Lanka</a>
+        <a target="blank" href="places_travel.html">Places to travel</a>
+
+      </div>
+
+    </div>
+    <a target="blank" href="TodoList.html">To-Do-List</a>
+
+    <a target="blank" href="contact_us.html">Contact Us</a>
+  </div>
+
+
+
+
+  <div class="about-section">
+    <h1>About Sri Lankan Tours</h1>
+    <p>Sri Lankan Tours with local connections, knowledge and expertise can make your holiday more canker free and fun
+      filled.
+      They can organise our holiday getting you the best deals and providing you with the hotels, transportation and
+      other assistance needed
+      to make your holiday an unforgettable one.</p>
+
+  </div>
+
+  <h2 id="header2" style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="person-min.png" style="width:100%">
+        <div class="container">
+          <h2>Mr. Janaka Perera</h2>
+          <p class="title">Managing Director </p>
+          <p>Excellent organizer and leader.</p>
+          <p><a href="#">jankaperera@gmail.com</a></p>
+          <p><button class="button" onclick="person1()">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="person-min.png" style="width:100%">
+        <div class="container">
+          <h2>Ms. Dushani Silva</h2>
+          <p class="title">Public Relation</p>
+          <p>Experienced handling a press conference.</p>
+          <p><a href="#">dushanisilva@gmail.com</a></p>
+          <p><button class="button" onclick="person2()">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="person-min.png" style="width:100%">
+        <div class="container">
+          <h2>Mr. John Doe</h2>
+          <p class="title">Director Marketing </p>
+          <p>Fomer director of Trip Lanka.</p>
+          <p><a href="#">johndoe@gmal.com</a></p>
+          <p><button class="button" onclick="person3()">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card">
+      <img src="person-min.png" style="width:100%">
+      <div class="container">
+        <h2>Mr. Indrajith Silva</h2>
+        <p class="title">Director Strategic Planning Research</p>
+        <p>Well experienced director.</p>
+        <p> <a href="#">Indrajith@gmail.com</a></p>
+        <p><button class="button" onclick="person4()">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="person-min.png" style="width:100%">
+      <div class="container">
+        <h2>Mr. Daluwatte</h2>
+        <p class="title">Director Events</p>
+        <p>Worked with the industry for more than 15 years.</p>
+        <p><a href="#">Daluwatte@gmail.com</a> </p>
+        <p><button class="button" onclick="person5()">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="person-min.png" style="width:100%">
+      <div class="container">
+        <h2>Mr. Daluwatte</h2>
+        <p class="title">Director Events</p>
+        <p>Worked with the industry for more than 15 years.</p>
+        <p><a href="#">Daluwatte@gmail.com</a> </p>
+        <p><button class="button" onclick="person6()">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    function person1() {
+      alert("Contact no : 0112568892");
+    }
+
+    function person2() {
+      alert("Contact no : 011255662");
+    }
+
+    function person3() {
+      alert("Contact no : 0112697892");
+    }
+
+    function person4() {
+      alert("Contact no : 011256565");
+    }
+    function person5() {
+      alert("Contact no : 0112428587");
+    }
+     function person6() {
+      alert("Contact no : 0112417857");
+    }
+ 
+
+  </script>
+
+
+
+  <!-- footer begin -->
+
+  <div id="footer">
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Sri Lankan Tours</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policies</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Our team</h4>
+              <ul>
+                <li><a href="#">directiors</a></li>
+                <li><a href="#">managers</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
